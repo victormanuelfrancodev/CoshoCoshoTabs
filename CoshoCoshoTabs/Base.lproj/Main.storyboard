@@ -36,7 +36,7 @@
                                             <action selector="tap2Down:" destination="BYZ-38-t0r" eventType="touchDown" id="aDb-9Q-AoN"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lf-Pa-3EL" customClass="TapCoshoCosho" customModule="CoshoCoshoTabs" customModuleProvider="target">
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lf-Pa-3EL" customClass="TapCoshoCosho" customModule="CoshoCoshoTabs" customModuleProvider="target">
                                         <rect key="frame" x="250" y="0.0" width="125" height="67"/>
                                         <connections>
                                             <action selector="tap3Down:" destination="BYZ-38-t0r" eventType="touchDown" id="9hw-nq-Eh6"/>
@@ -48,7 +48,6 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.016496716067194939" green="0.12865766882896423" blue="0.1681830883026123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2vH-rr-IBU" secondAttribute="trailing" id="2ld-uJ-C2f"/>
                             <constraint firstItem="2vH-rr-IBU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="I6e-BI-gzq"/>

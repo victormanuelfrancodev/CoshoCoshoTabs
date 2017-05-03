@@ -1,6 +1,13 @@
 //
-//  TapCoshoCosho.swift
+//  ButtonCoshoCosho.swift
 //  CoshoCoshoTabs
+//
+//  Created by Victor on 5/3/17.
+//  Copyright © 2017 Victor. All rights reserved.
+//
+
+//
+//  AnimacionTab
 //
 //  Created by Victor on 4/21/17.
 //  Copyright © 2017 Victor. All rights reserved.
@@ -8,7 +15,7 @@
 
 import UIKit
 
-class TapCoshoCosho:UIButton{
+class ButtonCoshoCosho:UIButton{
     
     static let STATE_ACTIVO_IZQUIERDA = 1
     static let STATE_ACTIVO_DERECHA = 2
@@ -23,6 +30,9 @@ class TapCoshoCosho:UIButton{
     var titleVisibleDisable = false
     var titleVisibleEnable = false
     
+    var colorLineSelect = UIColor(red: 0.008, green: 0.702, blue: 0.918, alpha: 1.000)
+    var colorLineDeselect = UIColor(red: 0.449, green: 0.494, blue: 0.524, alpha: 1.000)
+    var colorBackground = UIColor(red: 0.098, green: 0.156, blue: 0.196, alpha: 1.000)
     
     /*Activo  o desactivado */
     
@@ -38,7 +48,12 @@ class TapCoshoCosho:UIButton{
     
     override func draw(_ rect: CGRect) {
         
-        BotonTab.drawCanvas1(frame: self.bounds, tituloButtonTxtDisable: tituloButtonTxtDisable, titleVisibleDisable: titleVisibleDisable, tituloButtonTxtEnable: tituloButtonTxtEnable, titleVisibleEnable: titleVisibleEnable, state6Visible: state6Visible, state5Visible: state5Visible, state4Visable: state4Visable, state3Visible: state3Visible, state2Visible: state2Visible, state1Visible: state1Visible)
+        if #available(iOS 8.2, *) {
+            
+            CoshoCoshoTab.drawCanvas1(frame: self.bounds, state1Visible: state1Visible, state2Visible: state2Visible, state3Visible: state3Visible, state4Visible: state4Visable, state5Visible: state5Visible, state6Visible: state6Visible, titleVisibleDisable: titleVisibleDisable, tituloButtonTxtDisable: tituloButtonTxtDisable, tituloButtonTxtEnable: tituloButtonTxtEnable, titleVisibleEnable: titleVisibleEnable, selectedLineColorAtribute: colorLineSelect, deselectLineColorAtribute: colorLineDeselect, backgroundDeseslectColorAtribute: colorBackground)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     func changeState(estado:NSInteger){

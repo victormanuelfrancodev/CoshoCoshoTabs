@@ -14,8 +14,8 @@
 		574129EE1EAAA65200D90475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574129EC1EAAA65200D90475 /* LaunchScreen.storyboard */; };
 		574129F91EAAA65200D90475 /* CoshoCoshoTabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574129F81EAAA65200D90475 /* CoshoCoshoTabsTests.swift */; };
 		57412A041EAAA65200D90475 /* CoshoCoshoTabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57412A031EAAA65200D90475 /* CoshoCoshoTabsUITests.swift */; };
-		57412A131EAAA81900D90475 /* BotonTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57412A121EAAA81900D90475 /* BotonTab.swift */; };
-		57412A151EAAA8A600D90475 /* TapCoshoCosho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57412A141EAAA8A600D90475 /* TapCoshoCosho.swift */; };
+		57E8C4E71EBA797A0011E14B /* CoshoCoshoTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8C4E61EBA797A0011E14B /* CoshoCoshoTab.swift */; };
+		57E8C4E91EBA7DF30011E14B /* ButtonCoshoCosho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8C4E81EBA7DF30011E14B /* ButtonCoshoCosho.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		574129FF1EAAA65200D90475 /* CoshoCoshoTabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoshoCoshoTabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57412A031EAAA65200D90475 /* CoshoCoshoTabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoshoCoshoTabsUITests.swift; sourceTree = "<group>"; };
 		57412A051EAAA65200D90475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57412A121EAAA81900D90475 /* BotonTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotonTab.swift; sourceTree = "<group>"; };
-		57412A141EAAA8A600D90475 /* TapCoshoCosho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCoshoCosho.swift; sourceTree = "<group>"; };
+		57E8C4E61EBA797A0011E14B /* CoshoCoshoTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoshoCoshoTab.swift; sourceTree = "<group>"; };
+		57E8C4E81EBA7DF30011E14B /* ButtonCoshoCosho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCoshoCosho.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 				57412A111EAAA66600D90475 /* TabBar */,
 				574129E31EAAA65200D90475 /* AppDelegate.swift */,
 				574129E51EAAA65200D90475 /* ViewController.swift */,
+				57E8C4E81EBA7DF30011E14B /* ButtonCoshoCosho.swift */,
 				574129E71EAAA65200D90475 /* Main.storyboard */,
 				574129EA1EAAA65200D90475 /* Assets.xcassets */,
 				574129EC1EAAA65200D90475 /* LaunchScreen.storyboard */,
@@ -133,8 +134,7 @@
 		57412A111EAAA66600D90475 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				57412A121EAAA81900D90475 /* BotonTab.swift */,
-				57412A141EAAA8A600D90475 /* TapCoshoCosho.swift */,
+				57E8C4E61EBA797A0011E14B /* CoshoCoshoTab.swift */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -274,9 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				574129E61EAAA65200D90475 /* ViewController.swift in Sources */,
-				57412A131EAAA81900D90475 /* BotonTab.swift in Sources */,
+				57E8C4E91EBA7DF30011E14B /* ButtonCoshoCosho.swift in Sources */,
+				57E8C4E71EBA797A0011E14B /* CoshoCoshoTab.swift in Sources */,
 				574129E41EAAA65200D90475 /* AppDelegate.swift in Sources */,
-				57412A151EAAA8A600D90475 /* TapCoshoCosho.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +521,7 @@
 				57412A0A1EAAA65200D90475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57412A0B1EAAA65200D90475 /* Build configuration list for PBXNativeTarget "CoshoCoshoTabsTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +530,7 @@
 				57412A0D1EAAA65200D90475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57412A0E1EAAA65200D90475 /* Build configuration list for PBXNativeTarget "CoshoCoshoTabsUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +539,7 @@
 				57412A101EAAA65200D90475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
