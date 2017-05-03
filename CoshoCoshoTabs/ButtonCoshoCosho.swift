@@ -52,7 +52,7 @@ class ButtonCoshoCosho:UIButton{
             
             CoshoCoshoTab.drawCanvas1(frame: self.bounds, state1Visible: state1Visible, state2Visible: state2Visible, state3Visible: state3Visible, state4Visible: state4Visable, state5Visible: state5Visible, state6Visible: state6Visible, titleVisibleDisable: titleVisibleDisable, tituloButtonTxtDisable: tituloButtonTxtDisable, tituloButtonTxtEnable: tituloButtonTxtEnable, titleVisibleEnable: titleVisibleEnable, selectedLineColorAtribute: colorLineSelect, deselectLineColorAtribute: colorLineDeselect, backgroundDeseslectColorAtribute: colorBackground)
         } else {
-            // Fallback on earlier versions
+             CoshoCoshoTab.drawCanvas1(frame: self.bounds, state1Visible: state1Visible, state2Visible: state2Visible, state3Visible: state3Visible, state4Visible: state4Visable, state5Visible: state5Visible, state6Visible: state6Visible, titleVisibleDisable: titleVisibleDisable, tituloButtonTxtDisable: tituloButtonTxtDisable, tituloButtonTxtEnable: tituloButtonTxtEnable, titleVisibleEnable: titleVisibleEnable, selectedLineColorAtribute: colorLineSelect, deselectLineColorAtribute: colorLineDeselect, backgroundDeseslectColorAtribute: colorBackground)
         }
     }
     

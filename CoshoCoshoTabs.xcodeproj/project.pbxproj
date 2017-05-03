@@ -104,7 +104,6 @@
 				57412A111EAAA66600D90475 /* TabBar */,
 				574129E31EAAA65200D90475 /* AppDelegate.swift */,
 				574129E51EAAA65200D90475 /* ViewController.swift */,
-				57E8C4E81EBA7DF30011E14B /* ButtonCoshoCosho.swift */,
 				574129E71EAAA65200D90475 /* Main.storyboard */,
 				574129EA1EAAA65200D90475 /* Assets.xcassets */,
 				574129EC1EAAA65200D90475 /* LaunchScreen.storyboard */,
@@ -135,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				57E8C4E61EBA797A0011E14B /* CoshoCoshoTab.swift */,
+				57E8C4E81EBA7DF30011E14B /* ButtonCoshoCosho.swift */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -429,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoshoCoshoTabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnimacionTab.CoshoCoshoTabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoshoCoshoTabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnimacionTab.CoshoCoshoTabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
